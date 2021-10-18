@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url("public/images/img2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 107rem 65rem;
+      }
+      .center {
+        margin: auto;
+        width: 50%;
+       
+        padding: 10px;
+        color: antiquewhite;
+        margin-top: 7rem;
+      }
+      .btn {
+        margin-top: 10px;
+      }
+      textarea {
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        border: solid 1px rgb(240, 240, 240);
+        padding: 5px;
+      }
+    </style>
+    <title>Imagify</title>
+  </head>
+
+  <body>
+      <div style="text-align: center;color: antiquewhite;margin-top: 20px;">
+        <h1
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+        "
+      >IMAGIFY</h1>
+        <h3
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+        "
+      >A web app for Static Visual Media   
+      Cryptography based on Rubix’s Cube Principle
+   </h3>
+      </div>
+    <div class="center">
+      <h1
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+        "
+      >
+        Upload a Clear Image To Encrypt
+      </h1>
+      <form action="/encrypt" method="POST">
+        <input
+          type="file"
+          name="file1"
+          id="file1"
+          accept="image/png, image/jpeg"
+          class="form-control-file"
+        />
+        <button type="submit" class="btn btn-primary">Encrypt</button>
+      </form>
+
+      <br /><br />
+
+      <h1
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+        "
+      >
+        Upload a Encrypted Image To Decrypt
+      </h1>
+      <input type="radio" id="key" name="key" value="key" />
+       
+      <label
+        for="html"
+        style="
+          font-size: 20px;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+        "
+        >Give Key to decrypt</label
+      ><br />
+      <textarea name="encrypt" id="encrypt" cols="60" rows="5">Enter the value of kc, kr and Iter_max</textarea>
+      <br />
+      <form action="/decrypt" method="POST">
+        <input
+          type="file"
+          name="file2"
+          id="file2"
+          accept="image/png, image/jpeg"
+          class="form-control-file"
+        />
+        <button type="submit" class="btn btn-primary">Decrypt</button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

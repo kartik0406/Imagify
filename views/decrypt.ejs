@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagify</title>
+    <style>
+      body {
+        background-image: url("public/images/img4.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 107rem 65rem;
+      }
+      .center {
+        margin: auto;
+        width: 50%;
+
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        margin-top: 3rem;
+      }
+      img {
+        width: 500px;
+      }
+      textarea {
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        border: solid 1px rgb(240, 240, 240);
+        padding: 5px;
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h2
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+          font-size: 30px;
+        "
+      >
+        Decrypted Image
+      </h2>
+      <img src="../public/decrypted_images/<%=dec_image%>" alt="" />
+      <br /><br /><br /><br />
+    </div>
+  </body>
+</html>
