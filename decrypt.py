@@ -8,7 +8,7 @@ im = Image.open('public/encrypted_images/' + sys.argv[1])
 pix = im.load()
 
 
-#Obtaining the RGB matrices
+#Obtaining the RGB matricess
 r = []
 g = []
 b = []
